@@ -94,7 +94,7 @@ namespace Token_Based_Authentication_Web_API.Controllers
                     user.ResetPasswordCode = code;
                     _entities.SaveChanges();
 
-                    return ResponseMessage(Request.CreateErrorResponse(HttpStatusCode.OK, $"An email reset code is generated. Please user the following link to reset password. Link : { routeUrl }"));
+                    return ResponseMessage(Request.CreateErrorResponse(HttpStatusCode.OK, $"A password reset code is generated. Please user the following link to reset password. Link : { routeUrl }"));
                 }
             }
 
